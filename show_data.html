@@ -1,0 +1,77 @@
+<!----
+Date: June 3, 2022
+Name: Jose Guzman-Vargas
+File: show_data.html
+Summary:
+    This holds the content of the page and the layout of
+    the ids that the program_behavior.js will alter. This
+    page also imports the stylesheet, dataset, and program
+    behavior.
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My Dataset</title>
+
+        <!-- styles for the page... -->
+        <link rel="stylesheet" href="styles/styles.css">
+
+        <!-- reference the script with your JS array here... -->
+        <script src="scripts/dataset.js"></script>
+    </head>
+    <body>
+        <main id="left-column">
+            <h1>State Financial Data</h1>
+            <p>The Annual Survey of State Government Finances provides a comprehensive summary of
+                the annual survey findings for state governments, as well as data for individual states.
+                The data contain detail of revenue by source, expenditure by object and function,
+                indebtedness by term, and assets by purpose. This data goes back for almost two
+                decades across every date. (1992 - 2019)</p>
+            <p id="dataset">Value</p>
+            <div>
+                <section>
+                    <label>State: </label>
+                    <span id="state">Value</span>
+                </section>
+                <section>
+                    <label>Year: </label>
+                    <span id="year">Value</span>
+                </section>
+                <section>
+                    <label>Revenue: </label>
+                    <span id="rev">Value</span>
+                </section>
+                <section>
+                    <label>Spending: </label>
+                    <span id="spend">Value</span>
+                </section>
+                <section>
+                    <label>Taxes: </label>
+                    <span id="tax">Value</span>
+                </section>
+                <section>
+                    <label>Debts: </label>
+                    <span id="debt">Value</span>
+                </section>
+
+                <section>
+                    <button id="previous">Previous</button>
+                    <button id="next">Next</button>
+                </section>
+            </div>
+        </main>
+        <aside id="right-column">
+            <h2>Here are some interesting facts in my dataset!</h2>
+            <ul>
+                <li id="revSum">One</li>
+                <li id="avgDebt">Two</li>
+                <li id="maxTax">Three</li>
+            </ul>
+        </aside>
+
+        <!-- reference the script with program behavior here... -->
+        <script src="scripts/program_behavior.js"></script>
+    </body>
+</html>
+

@@ -1,0 +1,66 @@
+/*
+Date: June 2, 2022
+Name: Jose Guzman-Vargas
+File: style.css
+Summary:
+    This style sheet holds the styles for the show_data.html
+    page. Aligning two side by side blocks (Gold & Green) with
+    different fonts, sizes,
+*/
+/* layout logic */
+body {
+    display: grid;
+    width: 900px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    padding: 15px;
+    background-image: url("backImg.jpeg");
+}
+
+/* your styles go here... */
+main#left-column{
+    background-color: goldenrod;
+    border: 3px goldenrod solid;
+    border-radius: 15px;
+    padding: 8px;
+    margin: 5px;
+}
+
+aside#right-column{
+    background-color: #7dd56f;
+    border: 3px #7dd56f solid;
+    border-radius: 15px;
+    padding: 8px;
+    margin: 5px;
+}
+
+main div{
+    background-color: goldenrod;
+    border: 3px goldenrod solid;
+    border-radius: 15px;
+    padding: 10px;
+    font-family: Courier, serif;
+    font-size: large;
+    
+}
+
+main section{
+    border-top: 1px #444444 solid;
+    margin: 15px;
+    padding: 5px;
+}
+
+main p{
+    font-size: large;
+
+}
+
+aside ul{
+    padding: 0;
+}
+
+aside li{
+    margin: 15%;
+    font-size: larger;
+    font-family: "Trebuchet MS",serif;
+}
